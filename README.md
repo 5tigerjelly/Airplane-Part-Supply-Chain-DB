@@ -1,4 +1,4 @@
-# Airplane-Part-Supply-Chain-DB
+# Airplane Part Supply Chain Database
 
 Stored Procedure to add to Customer
 ```sql
