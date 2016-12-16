@@ -124,7 +124,9 @@ WHILE (@customers > 0)
 			@phone = CONCAT( AreaCode, Phone)
 		FROM PEOPLE;
 
-		EXEC @PersonID = addCustomer @CustomerFName = @CustomerFName, @CustomerLName = @CustomerLName, @Street = @Street,  @ZipCode = @ZipCode, @CityName = @CityName, @StateName = @StateName, @CountryName = @CountryName, @RegionName = @RegionName, @Phone = @Phone, @Email = @Email
+		EXEC @PersonID = addCustomer @CustomerFName = @CustomerFName, @CustomerLName = @CustomerLName, 
+			@Street = @Street, @ZipCode = @ZipCode, @CityName = @CityName, @StateName = @StateName, 
+			@CountryName = @CountryName, @RegionName = @RegionName, @Phone = @Phone, @Email = @Email
 
 		PRINT(@PersonID)
 		
@@ -158,7 +160,10 @@ WHILE (@customers > 0)
 
 		
 
-		EXEC @PersonID = addEmployee @EmployeeFname = @EmployeeFname, @EmployeeLName = @EmployeeLName, @SSN = @SSN, @Street = @Street,  @ZipCode = @ZipCode, @CityName = @CityName, @StateName = @StateName, @CountryName = @CountryName, @RegionName = @RegionName, @Phone = @Phone, @Email = @Email
+		EXEC @PersonID = addEmployee @EmployeeFname = @EmployeeFname, @EmployeeLName = @EmployeeLName, 
+			@SSN = @SSN, @Street = @Street,  @ZipCode = @ZipCode, @CityName = @CityName, 
+			@StateName = @StateName, @CountryName = @CountryName, @RegionName = @RegionName, 
+			@Phone = @Phone, @Email = @Email
 
 		PRINT(@PersonID)
 		
